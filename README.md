@@ -1,0 +1,1 @@
+# exercicios_fundProg_02_sequencial
