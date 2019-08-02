@@ -12,21 +12,27 @@
  * software and other kinds of works.
  */
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
  * @author neo
  * @create 01/08/2019
  */
-public class ex_02 {
-    public static void main(String[] args) {
-        Scanner imput = new Scanner(System.in);
+public class ex_08 {
+  public static void main(String[] args) {
+    Scanner imput = new Scanner(System.in);
 
-        int num = 0;
+    int hora = 0;
+    double valor = 0;
 
-        System.out.print("Informe número (inteiro): ");
-        num = imput.nextInt();
+    System.out.println("Calculo do salário");
+    System.out.print("Informe o valor ganho por hora trabalhada (por mês): ");
+    valor = imput.nextDouble();
 
-        System.out.println("O número informado foi " + num);
-    }
+    System.out.print("Informe a quantidade de horas trabalhadas: ");
+    hora = imput.nextInt();
+
+    System.out.printf("Ao final do mês você receberá R$ %1.2f.", (valor * hora));
+  }
 }

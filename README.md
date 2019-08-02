@@ -26,9 +26,9 @@ temperatura em graus Celsius.
 	C = (5 * (F-32) / 9) / C = (F – 32) / 1,8
 
 10. Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
-	a. o produto do dobro do primeiro com metade do segundo.
-	b. a soma do triplo do primeiro com o terceiro.
-	c. o terceiro elevado ao cubo.
+	- O produto do dobro do primeiro com metade do segundo;
+	- A soma do triplo do primeiro com o terceiro;
+	- O terceiro elevado ao cubo.
 
 11. Tendo como dados de entrada a altura de uma pessoa, construa um algoritmo que
 calcule seu peso ideal, usando a seguinte fórmula: (72.7\*altura) – 58.

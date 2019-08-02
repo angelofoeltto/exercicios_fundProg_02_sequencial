@@ -18,15 +18,18 @@ import java.util.Scanner;
  * @author neo
  * @create 01/08/2019
  */
-public class ex_02 {
-    public static void main(String[] args) {
-        Scanner imput = new Scanner(System.in);
+public class ex_09 {
+  public static void main(String[] args) {
+    Scanner imput = new Scanner(System.in);
 
-        int num = 0;
+    float temperatura = 0;
 
-        System.out.print("Informe número (inteiro): ");
-        num = imput.nextInt();
+    System.out.println("Transformar temperatura Farenheit em Celsius");
+    System.out.print("Informe temperatura em Farenheit: ");
+    temperatura = imput.nextFloat();
 
-        System.out.println("O número informado foi " + num);
-    }
+    System.out.printf("Temperatura em Celsius é");
+    System.out.printf("\nFormula 01: %1.2f.", ((5 * (temperatura-32) / 9)));
+    System.out.printf("\nFormula 02: %1.2f.", ((temperatura - 32) / 1.8));
+  }
 }

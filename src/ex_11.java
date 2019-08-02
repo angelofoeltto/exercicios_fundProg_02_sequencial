@@ -18,15 +18,16 @@ import java.util.Scanner;
  * @author neo
  * @create 01/08/2019
  */
-public class ex_02 {
-    public static void main(String[] args) {
-        Scanner imput = new Scanner(System.in);
+public class ex_11 {
+  public static void main(String[] args) {
+    Scanner imput = new Scanner(System.in);
 
-        int num = 0;
+    float altura = 0;
 
-        System.out.print("Informe número (inteiro): ");
-        num = imput.nextInt();
+    System.out.println("Peso ideal");
+    System.out.print("Informe sua altura em metros: ");
+    altura = imput.nextFloat();
 
-        System.out.println("O número informado foi " + num);
-    }
+    System.out.printf("Seu peso ideal é, ou deveria ser de %.2f quilos", (72.7*altura) - 58);
+  }
 }

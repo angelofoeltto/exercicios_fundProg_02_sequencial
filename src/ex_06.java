@@ -18,24 +18,16 @@ import java.util.Scanner;
  * @author neo
  * @create 01/08/2019
  */
-public class ex_04 {
+public class ex_06 {
     public static void main(String[] args) {
         Scanner imput = new Scanner(System.in);
 
-        final int TAM = 4;
+        float raio = 0;
 
-        float nota[] = new float[4];
-        float resultado = 0;
+        System.out.println("Raio do circulo");
+        System.out.print("Informe raio do circulo: ");
+        raio = imput.nextFloat();
 
-        System.out.println("Média bimestral");
-        for (int i = 0; i < TAM; i++) {
-            System.out.print("Informe nota " + (i + 1) + ": ");
-            nota[i] = imput.nextFloat();
-            resultado += nota[i];
-        }
-
-        for (int i = 0; i < TAM; i++) {
-            System.out.print("Média bimestral é " + (resultado / TAM));
-        }
+        System.out.println("Circunferência do circulo é de " + (2 * (Math.PI * raio)));
     }
 }
