@@ -16,9 +16,9 @@ import java.util.Scanner;
 
 /**
  * @author neo
- * @create 01/08/2019
+ * @create 04/08/2019
  */
-public class ex_11 {
+public class ex_12 {
   public static void main(String[] args) {
     Scanner imput = new Scanner(System.in);
 
@@ -28,6 +28,8 @@ public class ex_11 {
     System.out.print("Informe sua altura em metros: ");
     altura = imput.nextFloat();
 
-    System.out.printf("\n\nSeu peso ideal é, ou deveria ser de %.2f quilos", (72.7*altura) - 58);
+    System.out.println("\nSeu peso ideal é, ou deveria ser de:");
+    System.out.printf("Para Homens %.2f quilos", (72.7 * altura) - 58);
+    System.out.printf("\nPara Mulheres %.2f quilos", (62.1 * altura) - 44.7);
   }
 }
