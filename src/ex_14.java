@@ -27,6 +27,7 @@ public class ex_14 {
     final double SIND = 0.05f;
 
     int hora            = 0;
+    double valor        = 0;
     double valorBruto   = 0;
     double valorLiquido = 0;
     double descontos    = 0;
@@ -36,10 +37,12 @@ public class ex_14 {
 
     System.out.println("\nCalculo do salário\n");
     System.out.print("Informe o valor ganho por hora trabalhada (por mês): ");
-    valorBruto = imput.nextDouble();
+    valor = imput.nextDouble();
 
     System.out.print("Informe a quantidade de horas trabalhadas: ");
     hora = imput.nextInt();
+
+    valorBruto = valor * hora;
 
     //Descontos
     ir           = IR * valorBruto;
